@@ -26,7 +26,4 @@ public class Supervisor extends User {
         return "Supervisor{" + '}';
     }
 
-    
-    
-    
 }
