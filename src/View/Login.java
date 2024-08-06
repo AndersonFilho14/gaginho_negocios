@@ -6,6 +6,8 @@ package View;
 
 import javax.swing.JOptionPane;
 import Controller.LoginController;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
 
 /**
  *
@@ -90,8 +92,8 @@ public class Login extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addComponent(jLabelUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(19, 19, 19)
+                .addComponent(jLabelUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jTextFieldUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -121,6 +123,7 @@ public class Login extends javax.swing.JFrame {
         controller.fiztarefa();
         System.out.println(jTextFieldUsuario.getText());
         System.out.println(jPasswordFieldSenha.getText());
+         
     }//GEN-LAST:event_jButtonEntrarActionPerformed
 
     /**
@@ -170,4 +173,22 @@ public class Login extends javax.swing.JFrame {
     public void exiberMensagem(String mensagem) {
         JOptionPane.showMessageDialog(null, mensagem);
     }
+
+    public JPasswordField getjPasswordFieldSenha() {
+        return jPasswordFieldSenha;
+    }
+
+    public void setjPasswordFieldSenha(JPasswordField jPasswordFieldSenha) {
+        this.jPasswordFieldSenha = jPasswordFieldSenha;
+    }
+
+    public JTextField getjTextFieldUsuario() {
+        return jTextFieldUsuario;
+    }
+
+    public void setjTextFieldUsuario(JTextField jTextFieldUsuario) {
+        this.jTextFieldUsuario = jTextFieldUsuario;
+    }
+    
+    
 }
